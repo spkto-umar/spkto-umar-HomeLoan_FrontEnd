@@ -1,0 +1,20 @@
+
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+  }
+  .center2{
+    display: flex;
+    width: 300px;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button 
+ {
+    -webkit-appearance: none;
+  }

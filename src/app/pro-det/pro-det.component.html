@@ -1,0 +1,244 @@
+<!-- 
+<div class="create">
+  <p> Apply for loan </p>
+</div>
+
+<div class="update">
+
+</div> -->
+
+
+
+
+
+<div *ngIf="toggle" class="center ">
+  <!-- <div class="broden"> -->
+
+    <div class="border border-secondary p-5 w-5 ">
+      <p> Apply for a home loan </p>
+      <div>&nbsp;</div>
+      <div class="d-flex justify-content-center align-items-center">
+        <button type="submit" routerLink="/inc-det" class="btn btn-dark btn-m mb-1 ">Next</button>       
+      </div> 
+    </div>
+  <!-- </div> -->
+</div>
+
+ <div *ngIf="!toggle" class="center">
+    <div class="center m-5">
+        <div class="broden">
+              <table class="table table-striped table-bordered">
+
+                  <tr>
+                      <td class="bg-dark text-white">Property Name</td>
+                      <td class="bg-light text-dark">{{propertyName}}</td>
+                  </tr>
+              
+                  <tr>
+                      <td class="bg-dark text-white">Property Location</td>
+                      <td class="bg-light text-dark">{{propertyLocation}}</td>
+                  </tr>
+              
+                  <tr>
+                      <td class="bg-dark text-white">Amount</td>
+                      <td class="bg-light text-dark">{{amount}}</td>
+                  </tr>
+              
+                  <tr>
+                      <td class="bg-dark text-white">Retirement Age</td>
+                      <td class="bg-light text-dark">{{retirementAge}}</td>
+                  </tr>
+              
+                  <tr>
+                      <td class="bg-dark text-white">Monthly Salary</td>
+                      <td class="bg-light text-dark">{{monthlySalary}}</td>
+                  </tr>
+              
+                  <tr>
+                      <td class="bg-dark text-white">Organization</td>
+                      <td class="bg-light text-dark">{{organization}}</td>
+                  </tr>
+
+
+              </table>
+              <div class="adjust">
+                  <button type="button" (click) = "onEdit()" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-dark">Update</button>
+              </div>
+          </div>
+      </div>
+
+
+                      
+            
+      <div class="center m-5">
+        <div class="broden">
+            <table class="table table-striped table-bordered">
+
+                <tr>
+                    <td class="bg-dark text-white">Loan Amount</td>
+                    <td class="bg-light text-dark">{{loanAmount}}</td>
+                </tr>
+            
+                <tr>
+                    <td class="bg-dark text-white">Tenure</td>
+                    <td class="bg-light text-dark">{{tenure}}</td>
+                </tr>
+            
+                <tr>
+                    <td class="bg-dark text-white">Interest</td>
+                    <td class="bg-light text-dark">{{interest}}</td>
+                </tr>
+            
+                <tr>
+                    <td class="bg-dark text-white">Status</td>
+                    <td class="bg-light text-dark">{{status}}</td>
+                </tr>
+
+            </table>
+            <div class="  adjust">
+                <button type="button" (click) = "onEdit2()" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-modal="2" class="btn btn-dark">Update</button>
+            </div>
+        </div>
+    </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Income Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form [formGroup]="formValue" class="px-md-2">
+                      <div class="mb-3">
+                        <label for="propertyName" class="form-label">Property Name</label>
+                        <input type="text" formControlName="propertyName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                  
+                      <div class="mb-3">
+                        <label for="propertyLocation" class="form-label">Property Location</label>
+                        <input type="text"  formControlName="propertyLocation" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                  
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Amount</label>
+                          <input type="number" formControlName="amount" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                    
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Retirement Age</label>
+                          <input type="number" formControlName="retirementAge" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                    
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Monthly Salary</label>
+                          <input type="number" formControlName="monthlySalary" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                    
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Organization</label>
+                          <input type="text" formControlName="organization" class="form-control number" id="exampleInputPassword1">
+                        </div>
+                        <!-- <div class="d-flex justify-content-center align-items-center">
+                          <button type="submit"  class="btn btn-dark btn-m mb-1 broden">NEXT</button>       
+                        </div> -->
+                      </form> 
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" (click) = "updateIncomeDetails()" class="btn btn-dark">Update</button>
+                      <button type="button" id="cancel" class="btn btn-secondary"  data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Loan Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form [formGroup]="formValue2" class="px-md-2">
+                      <div class="mb-3">
+                        <label for="propertyName" class="form-label">Loan Amount</label>
+                        <input type="text" formControlName="loanAmount" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                  
+                      <div class="mb-3">
+                        <label for="propertyLocation" class="form-label">Tenure</label>
+                        <input type="text"  formControlName="tenure" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                  
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Interest</label>
+                          <input type="number" formControlName="interest" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                    
+                        <!-- <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Status</label>
+                          <input type="number" formControlName="status" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div> -->
+                    
+                      <!-- <div class="d-flex justify-content-center align-items-center">
+                     <button type="submit"  class="btn btn-dark btn-m mb-1 broden">NEXT</button>       
+                    </div> -->
+                  </form> 
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" (click) = "updateLoanDetails()" class="btn btn-dark">Update</button>
+                  <button type="button" id="cancel2" class="btn btn-secondary"  data-bs-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  </div>
+
+
+<!-- <div class="center">
+    <div class="border border-secondary p-5 w-5">
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Property Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+    
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Property Location</label>
+          <input type="text" class="form-control number" id="exampleInputPassword1">
+        </div>
+    
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Amount</label>
+          <input type="number" class="form-control number" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Retirement Age</label>
+          <input type="number" class="form-control number" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Monthly Salary</label>
+          <input type="number" class="form-control number" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Organization</label>
+          <input type="number" class="form-control number" id="exampleInputPassword1">
+        </div>
+        <div>&nbsp;</div>
+        <div class="d-flex justify-content-center align-items-center">
+          <button type="submit" routerLink="/inc-det" class="btn btn-dark btn-m mb-1 broden">Next</button>       
+         </div>
+      </form>
+    </div>
+    </div> -->
+
+
+<!-- <p>pro-det works!</p> -->

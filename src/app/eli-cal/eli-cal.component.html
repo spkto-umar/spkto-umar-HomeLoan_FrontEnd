@@ -1,0 +1,28 @@
+
+<div class="center">
+    <div class="border border-secondary p-5 w-5">
+    <form [formGroup]="formValue">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Monthly Income</label>
+          <input type="number" formControlName="monthlyIncome" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+
+        <div>&nbsp;</div>
+        <div class="d-flex justify-content-center align-items-center">
+          <button type="submit" (click)="calculateELI()" class="btn btn-dark btn-m mb-1 broden">Calculate</button>       
+         </div>
+      </form>
+      <div>&nbsp;</div>
+  <div>&nbsp;</div>
+  <div class="center2">
+    <span>Your home loan eligibility is : {{eligibileLoanAmount}}</span>
+    <span>&nbsp;₹</span>
+    <!-- .enlarge -->
+    <!-- <label for="exampleInputPassword1" class="form-label enlarge">EMI : {{emi}}</label> -->
+  </div>
+    </div>
+    </div>
+    
+    <!-- <p>emi-cal works!</p> -->
+
+

@@ -1,0 +1,35 @@
+
+<div class="center">
+<div class="border border-secondary p-5 w-5">
+<form [formGroup]="formValue">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Loan Amout</label>
+      <input type="number" formControlName="loanAmount" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Tenure in Months</label>
+      <input type="number" formControlName="tenureInMonths" class="form-control number" id="exampleInputPassword1">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Rate of Interest</label>
+      <input type="number" formControlName="interest" class="form-control number" id="exampleInputPassword1">
+    </div>
+    <div>&nbsp;</div>
+    <div class="d-flex justify-content-center align-items-center">
+      <button type="submit" (click) = "calculateEMI()" class="btn btn-dark btn-m mb-1 broden">Calculate</button>       
+    </div>
+  </form>
+  <div>&nbsp;</div>
+  <div>&nbsp;</div>
+  <div class="center2">
+    <h4>EMI : {{emi}}</h4>
+    <span>&nbsp;₹/m</span>
+    <!-- .enlarge -->
+    <!-- <label for="exampleInputPassword1" class="form-label enlarge">EMI : {{emi}}</label> -->
+  </div>
+</div>
+</div>
+
+<!-- <p>emi-cal works!</p> -->

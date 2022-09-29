@@ -1,0 +1,45 @@
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="home"><i class="fa-sharp fa-solid fa-building-columns"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" routerLink="emi-cal">Emi Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" routerLink="eli-cal">Eligibility Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" routerLink="app-for">Registeration Form</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="abo-us">About Us</a>
+          </li>
+      </ul>
+
+      <span class="navbar-text">
+          <a *ngIf="showAdmin" class="nav-link text" aria-current="page" routerLink="adm-log">Admin Login</a>
+      </span>
+      <span class="navbar-text">
+          &nbsp;
+          &nbsp;
+          &nbsp;
+      </span>
+      <span class="navbar-text">
+        <a  *ngIf="showUser" class="nav-link " aria-current="page" routerLink="use-log">User Login</a>
+      </span>
+      
+      <span class="navbar-text">
+          &nbsp;
+          &nbsp;
+          &nbsp;
+      </span>
+      <span class="navbar-text">
+        <a  *ngIf="showLogout" class="nav-link " aria-current="page" routerLink="home">Logout</a>
+      </span>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,267 @@
+{
+  "users": [
+    {
+      "firstName": "Viraj",
+      "lastName": "Patil",
+      "middleName": "Sadashiv",
+      "email": "viraj@patil.com",
+      "password": "viraj@patil.com",
+      "phone": 9876543210,
+      "dob": "2022-09-24",
+      "gender": "Male",
+      "nationality": "Dombivlite ",
+      "aadharNo": 123456,
+      "panNo": "654321",
+      "id": 1
+    },
+    {
+      "firstName": "Sagar",
+      "lastName": "Sharma",
+      "middleName": "Sanjay",
+      "email": "sagar@sharma.com",
+      "password": "sagar@sharma.com",
+      "phone": 9876543210,
+      "dob": "2022-09-23",
+      "gender": "Male",
+      "nationality": "Indian",
+      "aadharNo": 123456,
+      "panNo": "654321",
+      "id": 5
+    },
+    {
+      "firstName": "sdf",
+      "lastName": "sadf",
+      "middleName": "asdf",
+      "email": "adsf",
+      "password": "asdf",
+      "phone": 123,
+      "dob": "2022-09-24",
+      "gender": "asdf",
+      "nationality": "sadf",
+      "aadharNo": 123,
+      "panNo": "asdf",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "firstName": "qwerty",
+      "lastName": "qwerty",
+      "middleName": "qwerty",
+      "email": "qwerty",
+      "password": "qwerty",
+      "phone": 1223434,
+      "dob": "2022-09-26",
+      "gender": "male",
+      "nationality": "qwerty",
+      "aadharNo": 12324421,
+      "panNo": "12324421"
+    },
+    {
+      "id": 8,
+      "firstName": "vijay",
+      "lastName": "chauhan",
+      "middleName": "sadfsadf",
+      "email": "vijay@chauhan.com",
+      "password": "vijay@chauhan.com",
+      "phone": 1231231230,
+      "dob": "2013-10-29",
+      "gender": "Female",
+      "nationality": "Indian",
+      "aadharNo": 123123,
+      "panNo": "321321"
+    },
+    {
+      "id": 9,
+      "firstName": "",
+      "lastName": "",
+      "middleName": "",
+      "email": "",
+      "password": "",
+      "phone": "",
+      "dob": "",
+      "gender": "",
+      "nationality": "",
+      "aadharNo": "",
+      "panNo": ""
+    }
+  ],
+  "admins": [
+    {
+      "id": 1001,
+      "username": "viraj@patil",
+      "password": "viraj@patil"
+    },
+    {
+      "id": 1002,
+      "username": "sagar@sharma",
+      "password": "sagar@sharma"
+    },
+    {
+      "id": 1003,
+      "username": "asdf",
+      "password": "asdf"
+    }
+  ],
+  "inc-det": [
+    {
+      "id": 3,
+      "propertyName": "mannat",
+      "propertyLocation": "123",
+      "amount": 123,
+      "retirementAge": 123,
+      "monthlySalary": 123,
+      "organization": "123",
+      "user": {
+        "firstName": "Viraj",
+        "lastName": "Patil",
+        "middleName": "Sadashiv",
+        "email": "viraj@patil.com",
+        "password": "viraj@patil.com",
+        "phone": 9876543210,
+        "dob": "2022-09-24",
+        "gender": "Male",
+        "nationality": "Dombivlite ",
+        "aadharNo": 123456,
+        "panNo": "654321"
+      }
+    },
+    {
+      "id": 5,
+      "propertyName": "sadfsdfa",
+      "propertyLocation": "gk",
+      "amount": 890,
+      "retirementAge": 7890,
+      "monthlySalary": 7890,
+      "organization": "7089",
+      "user": {
+        "firstName": "vijay",
+        "lastName": "chauhan",
+        "middleName": "dinanath",
+        "email": "vijay@chauhan.com",
+        "password": "vijay@chauhan.com",
+        "phone": 1231231230,
+        "dob": "2013-10-29",
+        "gender": "Female",
+        "nationality": "Indian",
+        "aadharNo": 123123,
+        "panNo": "321321"
+      }
+    },
+    {
+      "id": 6,
+      "propertyName": "sagar",
+      "propertyLocation": "123",
+      "amount": 123,
+      "retirementAge": 123,
+      "monthlySalary": 123,
+      "organization": "123",
+      "user": {
+        "firstName": "Sagar",
+        "lastName": "Sharma",
+        "middleName": "Sanjay",
+        "email": "sagar@sharma.com",
+        "password": "sagar@sharma.com",
+        "phone": 9876543210,
+        "dob": "2022-09-23",
+        "gender": "Male",
+        "nationality": "Indian",
+        "aadharNo": 123456,
+        "panNo": "654321"
+      }
+    },
+    {
+      "id": 7,
+      "propertyName": "345",
+      "propertyLocation": "345",
+      "amount": 435,
+      "retirementAge": 345,
+      "monthlySalary": 345,
+      "organization": "345",
+      "user": {
+        "firstName": "qwerty",
+        "lastName": "qwerty",
+        "middleName": "qwerty",
+        "email": "qwerty",
+        "password": "qwerty",
+        "phone": 1223434,
+        "dob": "2022-09-26",
+        "gender": "male",
+        "nationality": "qwerty",
+        "aadharNo": 12324421,
+        "panNo": "12324421"
+      }
+    }
+  ],
+  "loa-det": [
+    {
+      "id": 2,
+      "loanAmount": 789,
+      "tenure": "67878678768",
+      "interest": 456,
+      "status": "2fdsg1",
+      "user": {
+        "firstName": "vijay",
+        "lastName": "chauhan",
+        "middleName": "dinanath",
+        "email": "vijay@chauhan.com",
+        "password": "vijay@chauhan.com",
+        "phone": 1231231230,
+        "dob": "2013-10-29",
+        "gender": "Female",
+        "nationality": "Indian",
+        "aadharNo": 123123,
+        "panNo": "321321"
+      }
+    },
+    {
+      "id": 3,
+      "loanAmount": 123,
+      "tenure": 123,
+      "interest": 213,
+      "status": 567,
+      "user": {
+        "firstName": "Sagar",
+        "lastName": "Sharma",
+        "middleName": "Sanjay",
+        "email": "sagar@sharma.com",
+        "password": "sagar@sharma.com",
+        "phone": 9876543210,
+        "dob": "2022-09-23",
+        "gender": "Male",
+        "nationality": "Indian",
+        "aadharNo": 123456,
+        "panNo": "654321"
+      }
+    },
+    {
+      "id": 4,
+      "loanAmount": 56,
+      "tenure": "234",
+      "interest": 68686,
+      "status": "pending",
+      "user": {
+        "firstName": "qwerty",
+        "lastName": "qwerty",
+        "middleName": "qwerty",
+        "email": "qwerty",
+        "password": "qwerty",
+        "phone": 1223434,
+        "dob": "2022-09-26",
+        "gender": "male",
+        "nationality": "qwerty",
+        "aadharNo": 12324421,
+        "panNo": "12324421"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

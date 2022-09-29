@@ -54,7 +54,7 @@ export class ProDetComponent implements OnInit {
       if(1){console.log("hai application"); this.toggle = false}
       else{console.log("nahi hai application");}
     },err =>{
-      alert("Something went wrong!!");
+      console.log("Something went wrong!!");
     })
 
 
@@ -100,7 +100,7 @@ export class ProDetComponent implements OnInit {
       if(1){}
       else{alert("user not found");}
     },err =>{
-      alert("Something went wrong!!");
+      console.log("Something went wrong!!");
     })
   }
 
@@ -163,7 +163,7 @@ export class ProDetComponent implements OnInit {
       if(1){}
       else{alert("user not found");}
     },err =>{
-      alert("Something went wrong!!");
+      console.log("Something went wrong!!");
     })
   }
 

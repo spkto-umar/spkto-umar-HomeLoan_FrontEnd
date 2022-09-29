@@ -1,4 +1,3 @@
-
 <body>
     <div class="">
         <div class="center m-5">
@@ -11,32 +10,35 @@
                             <th>Tenure</th>
                             <th>Interest Rate</th>
                             <th>Status</th>
-                            <th>User Id</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Email Id</th>
-                            <th>Aadhar No.</th>
-                            <th>Pan No.</th>
+                            <th>Approve</th>
+                            <th>Reject</th>
+                            
+                            
                         </tr>
                     </thead>
 
                     <tbody class="bg-light text-dark">
-                        <tr>
-                            <td>1001</td>
-                            <td>12000</td>
-                            <td>5</td>
-                            <td>8.5</td>
-                            <td>Approved</td>
-                            <td>1</td>
-                            <td>Sai</td>
-                            <td>Tarun</td>
-                            <td>sai.tarun@gmail.com</td>
-                            <td>1234567</td>
-                            <td>OVVPS2033S</td>
-                        </tr>
+                        <tr *ngFor="let user of users;let i=index ">
+                            <td>{{user.applicationId}}</td>
+                            <td>{{user.loanAmount}}</td>
+                            <td>{{user.tenure}}</td>
+                            <td>{{user.interest}}</td>
+                            <td>{{user.status}}</td>
+                            <td>
+                                <button (click)="onClickAccept(i)" class="btn btn-sm btn-success">
+                                  <i class="fa fa-search"></i>Approve</button></td>
+                                  <td>
+                                <button (click)="onClickReject(i)" class="btn btn-sm btn-danger">
+                            
+                                        <i class="fa fa-remove"></i>Reject</button>
+                                  </td>
+                                
+                            
+                            
+                          </tr>
                     </tbody>
 
-                    <tbody class="bg-light text-dark">
+                    <!-- <tbody class="bg-light text-dark">
                         <tr>
                             <td>1002</td>
                             <td>12000</td>
@@ -51,7 +53,6 @@
                             <td>OVVPS2033S</td>
                         </tr>
                     </tbody>
-
                     <tbody class="bg-light text-dark">
                         <tr>
                             <td>1003</td>
@@ -67,10 +68,7 @@
                             <td>OVVPS2033S</td>
                         </tr>
                     </tbody>
-
+ -->
                 </table>
             </div>
         </div>
-
-        <!-- <p>adm-das works!</p> -->
-

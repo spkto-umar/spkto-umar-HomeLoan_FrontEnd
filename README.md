@@ -25,3 +25,27 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Steps to run it
+Frontend
+
+    Download the frontend folder
+
+    Extract that zip
+
+    Now open VScode
+
+    open terminal and then create new project by ng new HomeLoan
+
+    Now the project will be creating the src folder
+
+    Delete that src folder
+
+    Copy the src folder downloaded from git and paste there
+
+    Then run
+    a. npm i bootstrap
+    b. ng add @angular/material
+    c. ng serve o
+
+       spring and vscode must run simultaneously

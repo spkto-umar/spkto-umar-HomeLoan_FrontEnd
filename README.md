@@ -1,3 +1,11 @@
+Home Loan Application -
+
+FRONT END – ANGULAR 8
+BACK END – SPRING BOOT
+DATABASE- ORACLE
+API TESTING TOOL USED- POSTMAN
+
+
 # HomeLoanFrontEnd
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
